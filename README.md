@@ -54,7 +54,7 @@ The dataset appears to be relatively **balanced**, with no major discrepancies a
 
 - **Feature Extraction**:
   - **MFCCs (Mel-Frequency Cepstral Coefficients)** were extracted using **Librosa**.
-- **Data Normalization**:
+- **Features Scaling**:
   - Features were standardized using **StandardScaler**.
 - **Label Encoding**:
   - Emotion labels were converted into numerical categories using **LabelEncoder**.
@@ -68,6 +68,7 @@ The following ML models were trained and evaluated using **Stratified K-Fold cro
 - **Decision Tree**
 - **Random Forest**
 - **MLP Classifier (Neural Network)**
+- **Feedforward Neural Network Classifier**
 
 ## Deep Learning Model
 
@@ -85,7 +86,11 @@ Each model was evaluated based on **Training Accuracy, Validation Accuracy, and 
 The best-performing model achieved a **high validation accuracy** and showed robust performance in cross-validation. Likely candidates for the best model:
 
 - **Random Forest** (for ML-based approach)
-- **MLP Classifier** (for deep learning-based approach)
+- **Feedforward Neural Network Classifier** (for deep learning-based approach)
+
+The feedforward neural network outperformed the other models, with a mean training accuracy of **0.9847** and validation accuracy around **0.9794**, showing strong generalization without overfitting. After evaluation on the test set, it achieved a final accuracy of **94%**, as confirmed by our instructor, further validating its effectiveness in real-world scenarios. It is the selected model.
+
+
 
 ## Installation and Execution
 
@@ -110,17 +115,13 @@ source project_env/bin/activate
 pip install -r requirements.txt
 ```
 
-### Example Execution
+### Execution
 
-Run emotion detection using:
-
-```sh
-python3 main.py
-```
+Run the notebook.
 
 ## Usage
 
-- Modify **grid size**, **hyperparameters**, and **feature extraction** methods for optimization.
+- Modify **hyperparameters**, and **feature extraction** methods for optimization.
 - Experiment with **different ML/DL architectures**.
 
 ## Contributing
