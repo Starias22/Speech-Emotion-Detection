@@ -4,6 +4,8 @@
 
 This project is part of my Master in Data Engieering (Semester 3) and more precisely, of the Speech Recognition module. It focuses on **Speech Emotion Detection**, leveraging **Machine Learning (ML) and Deep Learning (DL)** models to classify emotions from speech audio data. Various classifiers were tested to determine the most effective model for recognizing human emotions based on speech patterns.
 
+A complete description of the project can be found in [this PDF](./ProjectASR.pdf) .
+
 ## Table of Contents
 
 - [Dataset and Emotions](#dataset-and-emotions)
