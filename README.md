@@ -68,11 +68,10 @@ The following ML models were trained and evaluated using **Stratified K-Fold cro
 - **Decision Tree**
 - **Random Forest**
 - **MLP Classifier (Neural Network)**
-- **Feedforward Neural Network Classifier**
 
 ## Deep Learning Model
 
-A **Deep Learning approach** was also implemented using a **Keras Sequential Model**:
+A **Deep Learning approach (Feedforward Neural Network Classifier)** was also implemented using a **Keras Sequential Model**:
 
 - **Architecture:**
   - Dense Layers with ReLU activation
@@ -83,10 +82,6 @@ A **Deep Learning approach** was also implemented using a **Keras Sequential Mod
 
 Each model was evaluated based on **Training Accuracy, Validation Accuracy, and Cross-Validation Scores**.
 
-The best-performing model achieved a **high validation accuracy** and showed robust performance in cross-validation. Likely candidates for the best model:
-
-- **Random Forest** (for ML-based approach)
-- **Feedforward Neural Network Classifier** (for deep learning-based approach)
 
 The feedforward neural network outperformed the other models, with a mean training accuracy of **0.9847** and validation accuracy around **0.9794**, showing strong generalization without overfitting. After evaluation on the test set, it achieved a final accuracy of **94%**, as confirmed by our instructor, further validating its effectiveness in real-world scenarios. It is the selected model.
 
