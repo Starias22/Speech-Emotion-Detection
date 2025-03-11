@@ -97,7 +97,7 @@ Each model was evaluated based on **Training Accuracy, Validation Accuracy, and 
 
 The feedforward neural network outperformed the other models, with a mean training accuracy of **0.9847** and validation accuracy around **0.9794**, showing strong generalization without overfitting. After evaluation on the test set, it achieved a final accuracy of **94%**, as confirmed by our instructor, further validating its effectiveness in real-world scenarios. It is the selected model.
 
- [Here](./Test_audio_labeled.csv) the labeled test split.
+ [Here](./Test_audio_labeled.csv) is the labeled test split.
 
 
 
