@@ -32,6 +32,16 @@ The dataset used for this project is located in `EmotionalSpeechSet` and consist
 
 Each sample is linked to an audio file and its corresponding emotion label.
 
+The dataset can be found on [my drive](https://drive.google.com/drive/folders/1MR3Bvx_OPnGNEtHqSmP_WtD0BiAvgcdp?usp=sharing).
+It contains one folder and two files:
+- `EmotionalSpeechSetBlind`: This folder contains all the audio files in wav format.
+- `Train_audio_liste.csv`: This CSV file represents the training dataset and contains the data to be used for training and validation. It consists of 3 attributes:
+
+  1. The index of the row
+  2. `label`: The label of the data entry, which is the class or category of emotion
+  3. `filepath`: The filepath, which represents the path of the audio file, related to the dataset folder.
+- `BlindTest_audio_liste.csv`: This CSV file contains the data samples to be labeled to test our model.
+
 ## Preprocessing and Feature Extraction
 
 - **Checking for NULL values**:
@@ -87,13 +97,16 @@ Each model was evaluated based on **Training Accuracy, Validation Accuracy, and 
 
 The feedforward neural network outperformed the other models, with a mean training accuracy of **0.9847** and validation accuracy around **0.9794**, showing strong generalization without overfitting. After evaluation on the test set, it achieved a final accuracy of **94%**, as confirmed by our instructor, further validating its effectiveness in real-world scenarios. It is the selected model.
 
+ [Here](./Test_audio_liste.csv) the labeled test split.
+
+
 
 
 ## Installation and Execution
 
 ### Prerequisites
 
-- **Python** (>= 3.7)
+- **Python**
 - **pip**
 - **Virtual Environment (venv)**
 
@@ -103,6 +116,10 @@ The feedforward neural network outperformed the other models, with a mean traini
 git clone https://github.com/Starias22/Speech-Emotion-Detection.git
 cd Speech-Emotion-Detection
 ```
+
+### Download the dataset
+
+Go to [my drive](https://drive.google.com/drive/folders/1MR3Bvx_OPnGNEtHqSmP_WtD0BiAvgcdp?usp=sharing), dowload the dataset and unzip it
 
 ### Set up a Virtual Environment and Install Dependencies
 
