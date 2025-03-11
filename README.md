@@ -9,7 +9,7 @@ A complete description of the project can be found in [this PDF](./ProjectASR.pd
 ## Table of Contents
 
 - [Dataset and Emotions](#dataset-and-emotions)
-- [Preprocessing and Feature Extraction](#preprocessing-and-feature-extraction)
+- [Preprocessing and Features Extraction](#preprocessing-and-features-extraction)
 - [Machine Learning Models](#machine-learning-models)
 - [Deep Learning Model](#deep-learning-model)
 - [Results and Best Model](#results-and-best-model)
@@ -42,7 +42,7 @@ It contains one folder and two files:
   3. `filepath`: The filepath, which represents the path of the audio file, related to the dataset folder.
 - `BlindTest_audio_liste.csv`: This CSV file contains the data samples to be labeled to test our model.
 
-## Preprocessing and Feature Extraction
+## Preprocessing and Features Extraction
 
 - **Checking for NULL values**:
   - The data was checked for NULL values, and there were none.
@@ -64,7 +64,7 @@ It contains one folder and two files:
 
 The dataset appears to be relatively **balanced**, with no major discrepancies among the different emotion classes. The distribution ensures fair training across different categories, avoiding strong biases toward any particular emotion.
 
-- **Feature Extraction**:
+- **Features Extraction**:
   - **MFCCs (Mel-Frequency Cepstral Coefficients)** were extracted using **Librosa**.
 - **Features Scaling**:
   - Features were standardized using **StandardScaler**.
@@ -97,7 +97,7 @@ Each model was evaluated based on **Training Accuracy, Validation Accuracy, and 
 
 The feedforward neural network outperformed the other models, with a mean training accuracy of **0.9847** and validation accuracy around **0.9794**, showing strong generalization without overfitting. After evaluation on the test set, it achieved a final accuracy of **94%**, as confirmed by our instructor, further validating its effectiveness in real-world scenarios. It is the selected model.
 
- [Here](./Test_audio_liste.csv) the labeled test split.
+ [Here](./Test_audio_labeled.csv) the labeled test split.
 
 
 
@@ -135,7 +135,7 @@ Run the notebook.
 
 ## Usage
 
-- Modify **hyperparameters**, and **feature extraction** methods for optimization.
+- Modify **hyperparameters**, and **features extraction** methods for optimization.
 - Experiment with **different ML/DL architectures**.
 
 ## Contributing
